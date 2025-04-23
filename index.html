@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike - Tênis Oficial | Compre Online</title>
-    <!-- Adicionando o favicon -->
     <link rel="icon" href="assets/aaaaaaa.png" type="image/png">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,104 +27,194 @@
                         </svg>
                         <span class="cart-count" id="cartCount">0</span>
                     </li>
-               
-
                 </ul>
             </nav>
         </div>
     </header>
     
+    <!-- Seção Hero com Carrossel -->
     <section class="hero">
-        <h1>Novos Tênis Nike</h1>
-        <p>Descubra a mais recente coleção de tênis Nike com tecnologia inovadora para máximo conforto e desempenho.</p>
-        <button class="btn" id="heroBtn">Compre Agora</button>
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.), rgba(0, 0, 0, 0.)), url('assets/novahome\ \(3\).png')">
+                <div class="slide-content">
+                    <h1></h1>
+                    <p></p>
+                    
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/DunkLowjust.png')">
+                <div class="slide-content">
+                    <h1>Lançamento: Nike Dunk low</h1>
+                    <p>para e seu estilo.</p>
+                    <button class="btn" id="heroBtn2">Compre Agora</button>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/Cópia\ de\ Nike.png')">
+                <div class="slide-content">
+                    <h1>Coleção Especial Air Jordan</h1>
+                    <p>um estilo único.</p>
+                    <button class="btn" id="heroBtn3">Compre Agora</button>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/air.png')">
+                <div class="slide-content">
+                    <h1>Um dos mais bonitos de sua coleção</h1>
+                    <p>Coleção de um Tênis icônico.</p>
+                    <button class="btn" id="heroBtn3">Compre Agora</button>
+                </div>
+            </div>
+        
+            
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control prev">&#10094;</button>
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+        
+        <!-- Indicadores de slides -->
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
-    
+
+    <!-- Seção de Produtos em Destaque -->
     <section class="products" id="novidades">
         <h2 class="section-title">Destaques</h2>
         <div class="product-grid">
+            <!-- Produto 1 -->
             <div class="product-card">
                 <img src="assets/airforcewebp.png" alt="Nike Air Force 1" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike Air Force 1 '07</h3>
-                    <p class="product-price">R$ 899,99</p>
+                    <p class="product-price">R$ 499,99</p>
                     <p class="product-description">O clássico do basquete reinventado. O amortecimento Nike Air acrescenta conforto e estilo.</p>
                     <button class="btn add-to-cart" data-id="1" data-name="Nike Air Force 1 '07" data-price="899.99" data-image="assets/airforcewebp.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 2 -->
             <div class="product-card">
                 <img src="assets/airmax.png" alt="Nike Air Max 270" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike Air Max 270</h3>
-                    <p class="product-price">R$ 1.199,99</p>
+                    <p class="product-price">R$ 699,99</p>
                     <p class="product-description">O Air Max 270 oferece nosso maior amortecimento até hoje, uma sensação incrível em cada passo.</p>
                     <button class="btn add-to-cart" data-id="2" data-name="Nike Air Max 270" data-price="1199.99" data-image="assets/airmax.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 3 -->
             <div class="product-card">
                <img src="assets/airzoom.png" alt="Nike Zoom Pegasus 39" class="product-image">
                   <div class="product-info">
                     <h3 class="product-name">Nike Zoom Pegasus 39</h3>
-                    <p class="product-price">R$ 799,99</p>
+                    <p class="product-price">R$ 499,99</p>
                     <p class="product-description">Tênis de corrida com amortecimento responsivo e suporte leve para corridas diárias.</p>
                     <button class="btn add-to-cart" data-id="3" data-name="Nike Zoom Pegasus 39" data-price="799.99" data-image="assets/airzoom.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 4 -->
             <div class="product-card">
                 <img src="assets/dunklow.png" alt="Nike Dunk Low" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike Dunk Low Retro</h3>
-                    <p class="product-price">R$ 999,99</p>
+                    <p class="product-price">R$ 500</p>
                     <p class="product-description">O clássico retorna com o mesmo design icônico que conquistou quadras e ruas.</p>
                     <button class="btn add-to-cart" data-id="4" data-name="Nike Dunk Low Retro" data-price="999.99" data-image="assets/dunklow.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
+        
+
+        <!-- Produto 5 -->
+        <div class="product-card">
+            <img src="assets/LeBron Witness 7 Masculino.png" alt="Nike Air VaporMax" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Nike LeBron Witness 7 Masculino</h3>
+                <p class="product-price">R$ 999,99</p>
+                <p class="product-description">O VaporMax redefine o conforto com amortecimento inovador e design futurista.</p>
+                <button class="btn add-to-cart" 
+                        data-id="5" 
+                        data-name="Nike Air VaporMax" 
+                        data-price="1499.99" 
+                        data-image="assets/novoproduto.png">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+
+            <!-- Produto 6 -->
+            <div class="product-card">
+                <img src="assets/novoproduto.png" alt="Nike Air VaporMax" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Nike Air VaporMax</h3>
+                    <p class="product-price">R$ 1.499,99</p>
+                    <p class="product-description">O VaporMax redefine o conforto com amortecimento inovador e design futurista.</p>
+                    <button class="btn add-to-cart" 
+                            data-id="5" 
+                            data-name="Nike Air VaporMax" 
+                            data-price="1499.99" 
+                            data-image="assets/novoproduto.png">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
         </div>
     </section>
     
+    <!-- Seção de Lançamentos -->
     <section class="products" id="lancamentos">
         <h2 class="section-title">Lançamentos</h2>
         <div class="product-grid">
+            <!-- Produto 7 -->
             <div class="product-card">
                 <img src="assets/airjordanjpg.png" alt="Nike Air Jordan 1" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Air Jordan 1 Retro High OG</h3>
                     <p class="product-price">R$ 1.499,99</p>
                     <p class="product-description">O tênis que começou tudo. Retorna com os mesmos materiais premium e cores icônicas.</p>
-                    <button class="btn add-to-cart" data-id="5" data-name="Air Jordan 1 Retro High OG" data-price="1499.99" data-image="assets/airjordanjpg.png">Adicionar ao Carrinho</button>
+                    <button class="btn add-to-cart" data-id="7" data-name="Air Jordan 1 Retro High OG" data-price="1499.99" data-image="assets/airjordanjpg.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 8 -->
             <div class="product-card">
                 <img src="assets/runinfinity.png" alt="Nike React Infinity Run" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike React Infinity Run 3</h3>
-                    <p class="product-price">R$ 1.099,99</p>
+                    <p class="product-price">R$399,99</p>
                     <p class="product-description">Projetado para ajudar a reduzir lesões e manter você correndo por mais tempo.</p>
-                    <button class="btn add-to-cart" data-id="6" data-name="Nike React Infinity Run 3" data-price="1099.99" data-image="assets/runinfinity.png">Adicionar ao Carrinho</button>
+                    <button class="btn add-to-cart" data-id="8" data-name="Nike React Infinity Run 3" data-price="1099.99" data-image="assets/runinfinity.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 9 -->
             <div class="product-card">
                 <img src="assets/blazer.png" alt="Nike Blazer Mid '77" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike Blazer Mid '77 Vintage</h3>
-                    <p class="product-price">R$ 849,99</p>
+                    <p class="product-price">R$ 649,99</p>
                     <p class="product-description">Inspirado no basquete dos anos 70, com um visual retrô e materiais premium.</p>
-                    <button class="btn add-to-cart" data-id="7" data-name="Nike Blazer Mid '77 Vintage" data-price="849.99" data-image="assets/blazer.png">Adicionar ao Carrinho</button>
+                    <button class="btn add-to-cart" data-id="9" data-name="Nike Blazer Mid '77 Vintage" data-price="849.99" data-image="assets/blazer.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
             
+            <!-- Produto 10 -->
             <div class="product-card">
-                <img src="assets/vapomax.png" alt="Nike Air VaporMax 2023" class="product-image">
+                <img src="assets/vapomax.png" alt="Nike Air VaporMax" class="product-image">
                 <div class="product-info">
                     <h3 class="product-name">Nike Air VaporMax plus</h3>
-                    <p class="product-price">R$ 1.399,99</p>
+                    <p class="product-price">R$ 999,99</p>
                     <p class="product-description">A evolução do VaporMax com mais amortecimento e sustentabilidade.</p>
-                    <button class="btn add-to-cart" data-id="8" data-name="Nike Air VaporMax plus" data-price="1399.99" data-image="assets/vapomax.png">Adicionar ao Carrinho</button>
+                    <button class="btn add-to-cart" data-id="10" data-name="Nike Air VaporMax plus" data-price="1399.99" data-image="assets/vapomax.png">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
@@ -167,45 +255,14 @@
         </div>
     </div>
     
+    <!-- Rodapé -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Produtos</h3>
+       
                 <ul>
-                    <li><a href="#" class="nav-link" data-section="novidades">Tênis</a></li>
-                    <li><a href="#" class="nav-link" data-section="lancamentos">Lançamentos</a></li>
-                    <li><a href="#" class="nav-link" data-section="ofertas">Ofertas</a></li>
-                    <li><a href="#">Personalizados</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Ajuda</h3>
-                <ul>
-                    <li><a href="#">Status do Pedido</a></li>
-                    <li><a href="#">Entregas e Frete</a></li>
-                    <li><a href="#">Trocas e Devoluções</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Sobre a Nike</h3>
-                <ul>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
-                    <li><a href="#">Investidores</a></li>
-                    <li><a href="#">Sustentabilidade</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="https://instagram.com/nike" target="_blank">Instagram</a></li>
-                    <li><a href="https://facebook.com/nike" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/nike" target="_blank">Twitter</a></li>
-                    <li><a href="https://youtube.com/nike" target="_blank">YouTube</a></li>
+                    <a href="https://instagram.com/nike" target="_blank">Instagram</a>
+                    <a href="https://facebook.com/nike" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/nike" target="_blank">Twitter</a>
+                    <a href="https://youtube.com/nike" target="_blank">YouTube</a>
                 </ul>
             </div>
         </div>
@@ -216,9 +273,89 @@
     </footer>
 
     <script>
+        // Carrossel Automático
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuração do Carrossel
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            let currentSlide = 0;
+            let slideInterval;
+
+            // Inicia o carrossel
+            function startCarousel() {
+                slideInterval = setInterval(nextSlide, 2000);
+            }
+
+            // Para o carrossel
+            function pauseCarousel() {
+                clearInterval(slideInterval);
+            }
+
+            // Navega para um slide específico
+            function goToSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            // Próximo slide
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+
+            // Slide anterior
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', function() {
+                pauseCarousel();
+                nextSlide();
+                startCarousel();
+            });
+
+            prevBtn.addEventListener('click', function() {
+                pauseCarousel();
+                prevSlide();
+                startCarousel();
+            });
+
+            // Navegação pelos dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    pauseCarousel();
+                    goToSlide(index);
+                    startCarousel();
+                });
+            });
+
+            // Pausa quando o mouse está sobre o carrossel
+            document.querySelector('.carousel-container').addEventListener('mouseenter', pauseCarousel);
+            document.querySelector('.carousel-container').addEventListener('mouseleave', startCarousel);
+
+            // Inicia o carrossel
+            startCarousel();
+
+            // Botões "Compre Agora" do carrossel
+            document.getElementById('heroBtn1').addEventListener('click', function() {
+                document.getElementById('novidades').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('heroBtn2').addEventListener('click', function() {
+                document.getElementById('lancamentos').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('heroBtn3').addEventListener('click', function() {
+                document.getElementById('ofertas').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
         // Carrinho de Compras
         let cart = [];
-        const MAX_ITEMS = 10; // Limite máximo de itens no carrinho
+        const MAX_ITEMS = 10;
         const cartIcon = document.getElementById('cartIcon');
         const cartCount = document.getElementById('cartCount');
         const cartOverlay = document.getElementById('cartOverlay');
@@ -230,7 +367,6 @@
         const continueShoppingBtn = document.getElementById('continueShoppingBtn');
         const modalOverlay = document.getElementById('modalOverlay');
         const closeModalBtn = document.getElementById('closeModalBtn');
-        const heroBtn = document.getElementById('heroBtn');
         const logo = document.getElementById('logo');
         const navLinks = document.querySelectorAll('.nav-link');
         const limitCounter = document.getElementById('limitCounter');
@@ -255,20 +391,16 @@
                 const price = parseFloat(button.getAttribute('data-price'));
                 const image = button.getAttribute('data-image');
                 
-                // Calcular quantidade total de itens no carrinho
                 const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
                 
-                // Verificar se atingiu o limite
                 if (totalItems >= MAX_ITEMS) {
                     showLimitAlert();
                     return;
                 }
                 
-                // Verificar se o item já está no carrinho
                 const existingItem = cart.find(item => item.id === id);
                 
                 if (existingItem) {
-                    // Verificar se adicionar mais um ultrapassa o limite
                     if (totalItems + 1 > MAX_ITEMS) {
                         showLimitAlert();
                         return;
@@ -287,7 +419,6 @@
                 updateCart();
                 renderCart();
                 
-                // Feedback visual
                 button.textContent = 'Adicionado!';
                 setTimeout(() => {
                     button.textContent = 'Adicionar ao Carrinho';
@@ -302,26 +433,20 @@
             }, 3000);
         }
 
-        // Atualizar contador do carrinho
         function updateCart() {
             const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
             cartCount.textContent = totalItems;
-            
-            // Atualizar contador de limite
             limitCounter.textContent = `${totalItems}/${MAX_ITEMS}`;
             
-            // Atualizar barra de progresso
             const progressWidth = (totalItems / MAX_ITEMS) * 100;
             limitProgressBar.style.width = `${progressWidth}%`;
             
-            // Mudar cor da barra quando perto do limite
             if (progressWidth > 80) {
                 limitProgressBar.style.backgroundColor = '#ff5a5f';
             } else {
                 limitProgressBar.style.backgroundColor = '#111';
             }
             
-            // Atualizar botão de finalizar compra
             checkoutBtn.disabled = cart.length === 0;
             if (cart.length === 0) {
                 checkoutBtn.classList.add('btn-disabled');
@@ -329,11 +454,9 @@
                 checkoutBtn.classList.remove('btn-disabled');
             }
             
-            // Salvar no localStorage
             localStorage.setItem('nikeCart', JSON.stringify(cart));
         }
 
-        // Renderizar itens do carrinho
         function renderCart() {
             if (cart.length === 0) {
                 cartItems.innerHTML = '<div class="empty-cart">Seu carrinho está vazio</div>';
@@ -342,7 +465,6 @@
             }
             
             cartItems.innerHTML = '';
-            
             let total = 0;
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             
@@ -370,7 +492,6 @@
                 cartItems.appendChild(cartItemElement);
             });
             
-            // Adicionar eventos de remoção e alteração de quantidade
             document.querySelectorAll('.cart-item-remove').forEach(button => {
                 button.addEventListener('click', () => {
                     const id = button.getAttribute('data-id');
@@ -415,15 +536,10 @@
         // Finalizar compra
         checkoutBtn.addEventListener('click', () => {
             if (cart.length > 0) {
-                // Mostrar modal de confirmação
                 modalOverlay.style.display = 'flex';
-                
-                // Limpar carrinho
                 cart = [];
                 updateCart();
                 renderCart();
-                
-                // Fechar carrinho
                 cartOverlay.style.display = 'none';
             }
         });
@@ -436,12 +552,6 @@
         // Fechar modal
         closeModalBtn.addEventListener('click', () => {
             modalOverlay.style.display = 'none';
-        });
-
-        // Botão hero (Compre Agora)
-        heroBtn.addEventListener('click', () => {
-            // Rolar para a seção de novidades
-            document.getElementById('novidades').scrollIntoView({ behavior: 'smooth' });
         });
 
         // Logo - voltar ao topo
